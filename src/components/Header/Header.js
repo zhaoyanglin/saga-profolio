@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <img src='./images/me.jpg' height='200' width='200' className="myPic"/>
+                <img src='./images/me.jpg' height='200' width='200' alt='Z' className="myPic"/>
                 <h3>Zhaoyang Lin</h3>
             </div>
         );

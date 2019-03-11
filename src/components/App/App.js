@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from '../Header/Header';
 import { HashRouter as Router, Route} from "react-router-dom";
-
 import ProjectList from '../ProjectList/ProjectList';
 import Admin from '../Admin/Admin';
 

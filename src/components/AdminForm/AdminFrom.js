@@ -61,20 +61,25 @@ class AdminForm extends Component {
                 <h1>Add New Project</h1>
 
                 <div>
-                    <input placeholder='Name' onChange={this.handleChangeForInput('name')}/>
-                    <input type='date' onChange={this.handleChangeForInput('date_completed')}/>
+                    <input placeholder='Name' onChange={this.handleChangeForInput('name')} value={this.state.name}/>
+
+                    <input type='date' onChange={this.handleChangeForInput('date_completed')} value={this.state.date_completed}/>
 
                     <select onChange={this.handleChangeForInput('tag_id')}>{tags}</select>
 
                 </div>
 
                 <div>
-                    <input placeholder='GitHub URL' onChange={this.handleChangeForInput('github')}/>
-                    <input placeholder='Website URL (Optional)' onChange={this.handleChangeForInput('website')}/>
-                    <input placeholder='Img Url' onChange={this.handleChangeForInput('thumbnail')} />
+
+                    <input placeholder='GitHub URL' onChange={this.handleChangeForInput('github')} value={this.state.github}/>
+
+                    <input placeholder='Website URL (Optional)' onChange={this.handleChangeForInput('website')} value={this.state.website}/>
+
+                    <input placeholder='Img Url' onChange={this.handleChangeForInput('thumbnail')} value={this.state.thumbnail}/>
+
                 </div>
                 <div>
-                        <textarea placeholder='Discription' onChange={this.handleChangeForInput('discription')}/>
+                        <textarea placeholder='Discription' onChange={this.handleChangeForInput('discription')} value={this.state.discription}/>
                 </div>
 
                 <button type='submit' >Submit</button>
