@@ -9,7 +9,7 @@ class AdminForm extends Component {
         name: '',
         date_completed: 1,
         tag_id: 1,
-        gitHub: '',
+        github: '',
         website: '',
         discription: ''
     }
@@ -32,7 +32,7 @@ class AdminForm extends Component {
             name: '',
             date_completed: '',
             tag_id: '',
-            gitHub: '',
+            github: '',
             website: '',
             discription: ''
         })

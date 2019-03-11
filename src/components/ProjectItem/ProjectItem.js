@@ -7,7 +7,22 @@ class ProjectItem extends Component {
         return (
             <div className="ProjectItem">
 
-                <h>hi</h>
+                <div>
+                    {/* <img/> */}
+                </div>
+
+                <div>
+                    <div>
+                        <h1>{this.props.project.name}</h1>
+                        <a href={this.props.project.github} >GitHub</a>
+                        <a href={this.props.project.website} >Website</a>
+                        <h2>{this.props.project.tag_id}</h2>
+
+                    </div>
+                    <div>
+                        <p>{this.props.project.description}</p>
+                    </div>
+                </div>
             </div>
         );
     }
