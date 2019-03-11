@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ProjectItem from '../ProjectItem/ProjectItem';
+import Header from '../Header/Header';
 
 
 class ProjectList extends Component {
@@ -29,7 +30,7 @@ class ProjectList extends Component {
 
         return (
             <div className="ProjectList">
-
+                <Header />
             {projects}
 
             </div>

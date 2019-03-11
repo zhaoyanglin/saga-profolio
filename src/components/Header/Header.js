@@ -5,8 +5,8 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <img />
-                <h1>Zhaoyang Lin</h1>
+                <img src='./images/me.jpg' height='200' width='200' className="myPic"/>
+                <h3>Zhaoyang Lin</h3>
             </div>
         );
     }

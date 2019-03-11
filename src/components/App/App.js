@@ -11,7 +11,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
         <Router>
           <div>
           <Route exact path='/' component={ProjectList} />

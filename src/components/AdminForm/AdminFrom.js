@@ -11,7 +11,8 @@ class AdminForm extends Component {
         tag_id: 1,
         github: '',
         website: '',
-        discription: ''
+        discription: '',
+        thumbnail: ''
     }
 
     componentDidMount = () => {
@@ -34,7 +35,8 @@ class AdminForm extends Component {
             tag_id: '',
             github: '',
             website: '',
-            discription: ''
+            discription: '',
+            thumbnail: ''
         })
     }
 
@@ -69,9 +71,10 @@ class AdminForm extends Component {
                 <div>
                     <input placeholder='GitHub URL' onChange={this.handleChangeForInput('github')}/>
                     <input placeholder='Website URL (Optional)' onChange={this.handleChangeForInput('website')}/>
+                    <input placeholder='Img Url' onChange={this.handleChangeForInput('thumbnail')} />
                 </div>
                 <div>
-                        <input placeholder='Discription' onChange={this.handleChangeForInput('discription')}/>
+                        <textarea placeholder='Discription' onChange={this.handleChangeForInput('discription')}/>
                 </div>
 
                 <button type='submit' >Submit</button>

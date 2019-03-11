@@ -1,13 +1,7 @@
 .App {
   text-align: center;
-}
-
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .App-title {
@@ -21,4 +15,48 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.Header {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  background-color:grey
+}
+
+.myPic {
+  border-radius: 50%;
+}
+
+.ProjectItem {
+  background-color: rgba(255,255,255,0.5) !important;
+  padding : 20px 10px 20px 0px; 
+  margin: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.ProjectItem .imageDiv {
+  width: 20%;
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.ProjectItem .contentDiv {
+  display: inline-block;
+}
+
+.ProjectItem .contentDiv .topPart h2{
+    display: inline;
+    padding-right: 20px;
+}
+
+.ProjectItem .contentDiv .topPart{
+    display: flex;
+    align-items: baseline;
+
+}
+.ProjectItem .contentDiv .topPart a{
+  padding-right: 20px;
 }

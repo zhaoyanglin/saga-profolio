@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
-
+import Card from '@material-ui/core/Card';
 
 class ProjectItem extends Component {
     // Renders the entire app on the DOM
     render() {
         return (
-            <div className="ProjectItem">
+            <Card className="ProjectItem">
 
-                <div>
-                    {/* <img/> */}
+                <div className="imageDiv">
+                    <img src={this.props.project.thumbnail} alt={this.props.project.name} height="250" width="250"/>
                 </div>
 
-                <div>
-                    <div>
-                        <h1>{this.props.project.name}</h1>
+                <div className="contentDiv">
+                    <div className="topPart">
+                        <h2>{this.props.project.name}</h2>
                         <a href={this.props.project.github} >GitHub</a>
                         <a href={this.props.project.website} >Website</a>
-                        <h2>{this.props.project.tag_id}</h2>
+                        <p>{this.props.project.tag_name}</p>
 
                     </div>
-                    <div>
+                    <div className="description">
                         <p>{this.props.project.description}</p>
                     </div>
                 </div>
-            </div>
+            </Card>
         );
     }
 }
