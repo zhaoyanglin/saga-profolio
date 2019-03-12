@@ -8,7 +8,7 @@ class AdminForm extends Component {
     state = {
         name: '',
         date_completed: 1,
-        tag_id: 1,
+        tag_id: '',
         github: '',
         website: '',
         discription: '',
@@ -27,8 +27,11 @@ class AdminForm extends Component {
     onSubmitButton = (event) => {
         event.preventDefault();
 
-        this.props.dispatch({ type: 'ADD_PROJECT', payload: this.state });
-        
+        if(this.state.name === '' && this.state.tag_id === '') {
+            alert(`Name and Date and ID tag can't be empty`)
+        } else{
+            this.props.dispatch({ type: 'ADD_PROJECT', payload: this.state });
+        }        
         this.setState({
             name: '',
             date_completed: '',
@@ -65,7 +68,10 @@ class AdminForm extends Component {
 
                     <input type='date' onChange={this.handleChangeForInput('date_completed')} value={this.state.date_completed}/>
 
-                    <select onChange={this.handleChangeForInput('tag_id')}>{tags}</select>
+                    <select onChange={this.handleChangeForInput('tag_id')}>
+                        <option value="">Select a Tag</option>
+                        {tags}
+                    </select>
 
                 </div>
 
