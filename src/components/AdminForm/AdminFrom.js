@@ -88,7 +88,7 @@ class AdminForm extends Component {
                         <textarea placeholder='Discription' onChange={this.handleChangeForInput('discription')} value={this.state.discription}/>
                 </div>
 
-                <button type='submit' >Submit</button>
+                            
 
             </form>
         );
